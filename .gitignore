@@ -403,3 +403,6 @@ INUPCO.SRM.*.xml
 /BloodDonation.Data/obj/project.nuget.cache
 /BloodDonation.UI/obj/Debug/net8.0/BloodDonation.UI.AssemblyInfo.cs
 /BloodDonation.UI/obj/Debug/net8.0/BloodDonation.UI.AssemblyInfoInputs.cache
+/.vs/ProjectEvaluation/blooddonation.projects.v7.bin
+/.vs/BloodDonation/v17/.futdcache.v2
+/.vs/ProjectEvaluation/blooddonation.metadata.v7.bin
