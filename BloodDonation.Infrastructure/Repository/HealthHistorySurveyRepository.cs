@@ -10,7 +10,10 @@ namespace BloodDonation.Infrastructure.Repository
     {
         private readonly ApplicationDbContext _context;
 
-        public HealthHistorySurveyRepository(ApplicationDbContext context) => _context = context;
+        public HealthHistorySurveyRepository(ApplicationDbContext context)
+        {
+            _context = context;
+        }
 
         public async Task<bool> Add(HealthHistorySurveyDTO survey)
         {

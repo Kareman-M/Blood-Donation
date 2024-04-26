@@ -15,9 +15,5 @@ namespace BloodDonation.Infrastructure.Context
         public DbSet<Campaign> Campaigns { get; set; }
         public DbSet<Hospital> Hospitals { get; set; }
         public DbSet<HealthHistorySurvey> HistorySurveys { get; set; }
-        protected override void OnModelCreating(ModelBuilder builder)
-        {
-            base.OnModelCreating(builder);
-        }
     }
 }

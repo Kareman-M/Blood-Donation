@@ -9,7 +9,10 @@ namespace BloodDonation.Infrastructure.Repository
     {
         private readonly ApplicationDbContext _context;
 
-        public BloodRequestDonorRepository(ApplicationDbContext context) => _context = context;
+        public BloodRequestDonorRepository(ApplicationDbContext context)
+        {
+            _context = context;
+        }
 
         public async Task<bool> Add(int bloodrequestId , int donationQty, string userId)
         {

@@ -7,9 +7,9 @@ namespace BloodDonation.Infrastructure.Repository
 {
     public class BloodRequestRepository : IBloodRequestRepository
     {
-        private readonly ApplicationDbContext _context;
+        //private readonly ApplicationDbContext _context;
 
-        public BloodRequestRepository(ApplicationDbContext context)=> _context = context;
+        //public BloodRequestRepository(ApplicationDbContext context)=> _context = context;
 
         public Task<bool> Add(BloodRequest request)
         {
