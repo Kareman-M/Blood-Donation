@@ -10,10 +10,11 @@ namespace BloodDonation.Infrastructure.Context
         {
         }
 
-        DbSet<BloodRequest> BloodRequests { get; set; }
-        DbSet<Campaign> Campaigns { get; set; }
-        DbSet<Hospital> Hospitals { get; set; }
-        DbSet<HistorySurvey> HistorySurveys { get; set; }
+        public DbSet<BloodRequest> BloodRequests { get; set; }
+        public DbSet<BloodRequestDonor> BloodRequestDonors { get; set; }
+        public DbSet<Campaign> Campaigns { get; set; }
+        public DbSet<Hospital> Hospitals { get; set; }
+        public DbSet<HealthHistorySurvey> HistorySurveys { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);

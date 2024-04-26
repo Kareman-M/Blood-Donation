@@ -5,17 +5,24 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BloodDonation.Data.Entities
 {
-    public class BloodRequest
+    public class BloodRequest:BaseEntity
     {
-        [Key]
-        public int Id { get; set; }
+        [Required]
         public int RequestedQuantity { get; set; }
+        [Required]
         public int RemainQuantity { get; set; }
+        [Required]
         public RequestStatus Status { get; set; }
+        [Required]
         public string HospitalLocation { get; set; }
-        public Guid RequesterUserId {  get; set; }
+        [Required]
+        public string RequesterUserId {  get; set; }
         [ForeignKey(nameof(RequesterUserId))]
         public User User { get; set; }
         public Collection<BloodRequestDonor> BloodRequestDonors { get; set; }
+        private BloodRequest()
+        {
+
+        }
     }
 }

@@ -3,18 +3,40 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BloodDonation.Data.Entities
 {
-    public class BloodRequestDonor
+    public class BloodRequestDonor : BaseEntity
     {
-        [Key]
-        public int Id { get; set; }
-        public int DonationQuantity { get; set; }
-        public int BloodRequestId { get; set; }
+        [Required]
+        public int DonationQuantity { get; private set; }
+        [Required]
+        public int BloodRequestId { get; private set; }
 
         [ForeignKey(nameof(BloodRequestId))]
-        public BloodRequest BloodRequest { get; set; }
-        public Guid DonorUserId { get; set; }
+        public BloodRequest BloodRequest { get; private set; }
+        [Required]
+        public string DonorUserId { get; private set; }
 
         [ForeignKey(nameof(DonorUserId))]
-        public User User { get; set; }
+        public User User { get; private set; }
+        private BloodRequestDonor()
+        {
+
+        }
+
+        public static BloodRequestDonor Create(int bloodrequestId, int donationQty, string userId)
+        {
+            return new BloodRequestDonor()
+            {
+                DonationQuantity = donationQty,
+                BloodRequestId = bloodrequestId,
+                DonorUserId = userId,
+                CreatedAt = DateTime.Now,
+                CreatedBy = userId,
+            };
+        }
+
+        public void UpdateDonationQty(int donationQty)
+        {
+            DonationQuantity = donationQty;
+        }
     }
 }

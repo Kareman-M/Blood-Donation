@@ -16,7 +16,8 @@ namespace BloodDonation.Data.Entities
         public int HistorySurveyId { get; set; }
 
         [ForeignKey(nameof(HistorySurveyId))]
-        public HistorySurvey HistorySurvey { get; set; }
+        public HealthHistorySurvey HistorySurvey { get; set; }
         public Collection<BloodRequest> BloodRequests { get; set; }
+        public Collection<BloodRequestDonor> BloodRequestDonors { get; set; }
     }
 }
