@@ -405,3 +405,14 @@ INUPCO.SRM.*.xml
 /.vs/ProjectEvaluation/blooddonation.projects.v7.bin
 /.vs/BloodDonation/v17/.futdcache.v2
 /.vs/ProjectEvaluation/blooddonation.metadata.v7.bin
+/BloodDonation.UI/obj/Debug/net8.0/BloodDonation.UI.assets.cache
+/BloodDonation.UI/obj/BloodDonation.UI.csproj.nuget.dgspec.json
+/BloodDonation.UI/obj/BloodDonation.UI.csproj.nuget.g.props
+/BloodDonation.UI/obj/BloodDonation.UI.csproj.nuget.g.targets
+/BloodDonation.UI/obj/project.assets.json
+/BloodDonation.UI/obj/project.nuget.cache
+/.vs/BloodDonation/FileContentIndex/e98e9412-73e7-4764-bc2e-de04a8d52290.vsidx
+/BloodDonation.Service/obj/Debug/net8.0/BloodDonation.Service.AssemblyInfo.cs
+/BloodDonation.Service/obj/Debug/net8.0/BloodDonation.Service.AssemblyInfoInputs.cache
+/BloodDonation.Service/obj/project.assets.json
+/BloodDonation.Service/obj/project.nuget.cache
